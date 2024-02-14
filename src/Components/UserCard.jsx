@@ -8,7 +8,7 @@ const details=[
     skills:["UI/UX", "Front End Development", "HTML", "React","Node" ],
   },
   {
-    name:"Sandie Traister", 
+    name:"Sandie Martins", 
     City:"Las Vegas",
     Profile:"Back-End Developer",
     online:false, 
@@ -16,7 +16,7 @@ const details=[
     skills:["UI/UX", "Front End Development", "HTML", "React","Node", "MONGODB" ],
   },
   {
-    name:"Elizabeth Skelton", 
+    name:"Elizabeth", 
     City:"Las Vegas",
     Profile:"Devops Engineer",
     online:false, 
@@ -52,9 +52,6 @@ function User(props){
 
 export const UserCard = () => {
   return (
-    
-    //<User name="kathy Barron" City="Las Vegas" Profile="Front-End Developer"
-     //online={true} image="Images/imgs2.jpg" skills={["UI/UX", "Front End Development", "HTML", "React","Node" ]}></User>
      details.map((values, index)=><User name={values.name} City={values.City} Profile={values.Profile}
     online={values.online} image={values.image} skills={values.skills}></User>)
     
